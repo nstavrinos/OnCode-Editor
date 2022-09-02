@@ -1,0 +1,75 @@
+.dropdown {
+  float: left;
+  overflow: hidden;
+  
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: grey;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content .set-lab {
+  float: none;
+  background: grey;
+  cursor: pointer;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  height: 40px;
+  width:auto;
+  color: #fff;
+  min-width:  170px;
+  
+}
+
+.dropdown:hover .dropbtn {
+  background-color: grey;
+  color: white;
+}
+.dropdown-content .set-lab:hover {
+  background: linear-gradient(to bottom, #6a6cca 5%, #6a6cca 100%);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.set-span{
+  float: left;
+}
+
+.set-switch{
+  float : right;
+  margin-left: 15px;
+}
+
+
+@media screen and (max-width: 1100px) {
+
+  .dropdown {float: none;}
+  .dropdown-content {position: relative;}
+  .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+  }
+}

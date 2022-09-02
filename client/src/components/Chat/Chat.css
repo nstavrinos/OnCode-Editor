@@ -1,0 +1,137 @@
+:root {
+    --msger-bg: #fff;
+    --border: 2px solid #ddd;
+    --left-msg-bg: #ececec;
+  }
+  
+
+  .msger {
+    display: flex;
+    flex-flow: column wrap;
+    position: relative;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    border: var(--border);
+    background: var(--msger-bg);
+    box-shadow: 0 15px 15px -5px rgba(0, 0, 0, 0.2);
+    
+  }
+  
+  .msger-header {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    border-bottom: var(--border);
+    background: linear-gradient(to bottom, #6a6cca 5%, #6a6cca 100%);
+    color: white;
+  }
+  
+  .msger-chat {
+    flex: 1;
+    overflow-y: auto;
+    padding: 5px;
+  }
+  .msger-chat::-webkit-scrollbar {
+    width: 6px;
+  }
+  .msger-chat::-webkit-scrollbar-track {
+    background: #ddd;
+  }
+  .msger-chat::-webkit-scrollbar-thumb {
+    background: #22254b;
+  }
+  .msg-left-msg {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10px;
+  }
+  .msg:last-of-type {
+    margin: 0;
+  }
+  
+  .msg-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    background: #ddd;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    background-image: url(../FileTree/images/hacker.png);
+  }
+  
+  .msg-bubble {
+    max-width: 300px;
+    padding: 5px;
+    border-radius: 10px;
+    background: var(--left-msg-bg);
+    border-bottom-left-radius: 0;
+  }
+  .msg-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .msg-info-name {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  .msg-info-time {
+    font-size: 0.8em;
+  }
+  
+
+  #msger-inputarea {
+    display: flex;
+    padding: 5px;
+    border-top: var(--border);  
+    
+  }
+  #msger-inputarea * {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    font-size: 0.8em;
+    
+  }
+  #msgerinput {
+      
+    flex: 1;
+    background: #ddd;
+   
+  }
+  .msger-send-btn {
+    margin-left: 10px;
+    background: #22254b;
+    color: #fff;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+    width: 60px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  
+  .close-icon{
+      height: 23px;
+      width: 23px;
+      cursor: pointer;
+      position: absolute;
+      right: 0;
+      margin-right: 10px;
+  }
+
+  .msger-header-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mes-title{
+    font-weight: bold;
+    color: #fff;
+    font-size: medium;
+  }

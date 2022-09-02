@@ -1,0 +1,35 @@
+.dropdown-menu {
+    width: auto;
+    position: absolute;
+    top: 70px;
+    list-style: none;
+    z-index: 1;
+  }
+  
+  
+  
+  .dropdown-menu li {
+    background: grey;
+    cursor: pointer;
+  }
+  
+  .dropdown-menu li:hover {
+    background: linear-gradient(to bottom, #6a6cca 5%, #6a6cca 100%);
+  }
+  
+  .dropdown-menu-item {
+    display: block;
+    height: 50px;
+    width:auto;
+    color: #fff;
+    padding: 15px;
+  }
+  
+  .set-span{
+    float: left;
+  }
+  
+  .set-switch{
+    float : right;
+    margin-left: 15px;
+  }

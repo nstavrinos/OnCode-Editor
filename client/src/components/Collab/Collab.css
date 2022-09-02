@@ -1,0 +1,204 @@
+
+body.active-collab {
+    overflow-y: hidden;
+}
+  
+.collab{
+    z-index: 1;
+}
+
+.collab, .collab_overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+  
+.collab_overlay {
+    background: rgba(49,49,49,0.8);
+}
+
+.collab-content {
+    position: absolute;
+    display:block;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 10px 28px;
+    border-radius: 3px;
+    max-width: 600px;
+    min-width: 320px;
+}
+.share-content {
+    
+    display:block;
+    
+}
+
+
+.collab-h2 {
+    color: #6a6cca;
+    font-size: 20px;
+    font-weight: bold;
+    float : left;
+}
+
+.set-switch{
+    float : right;
+    margin-top: 4px;
+}
+
+
+.share-link{
+    display:block; 
+   
+}
+.box{
+    background: #6a6cca;
+    width: 175px;
+    height: 30px;
+    margin-top: 25px;
+    float : left;
+    
+}
+
+p{
+    
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+
+  
+.copy:hover {
+    background-color: #6a6cca; 
+    color: white;
+}
+
+.copy {
+    transition-duration: 0.4s;
+    float : right;
+    background-color:#0a0a23;
+    color: #fff;
+    border:none; 
+    border-radius:10px; 
+    padding:5px;
+    height:30px; 
+    width: 70px;
+    margin-top: 25px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.join-content {
+    display:block;    
+}
+
+
+.join-h2 {
+    color: #6a6cca;
+    font-size: 20px;
+    font-weight: bold;
+    float : left;
+    margin-top: 20px;
+   
+}
+
+
+.join_input {
+    float : left;
+    width: 175px;
+    height: 30px;
+    padding: 10px 15px;
+   
+    transition: 0.4s;
+    font-size: 15px;
+    background-color: #6a6cca; 
+}
+
+.join_input:focus {
+    box-shadow: 0px Opx 3px rgba (0, 0, 0, 0.2);
+}
+
+.join:hover {
+    background-color: #6a6cca; 
+    color: white;
+}
+
+.join {
+    transition-duration: 0.4s;
+    float : right;
+    background-color:#0a0a23;
+    color: #fff;
+    border:none; 
+    border-radius:10px; 
+    padding:5px;
+    height:30px; 
+    width: 70px;
+    margin-top: 25px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.join-link{
+    position: block; 
+    width: 100%;
+}
+
+.join_box{
+    width: 175px;
+    height: 30px;
+    margin-top: 25px;
+    float : left;
+    
+}
+
+
+
+.end-content {
+    
+    display:block;
+    
+}
+
+
+.end-h2 {
+    color: #6a6cca;
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    float : left;
+}
+
+.end-switch{
+    float : right;
+    margin-top: 24px;
+}
+
+.close-collab-modal{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+  }
+
+.collab-header-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  
+}
+
+.collab-title{
+  font-weight: bold;
+  color: #6a6cca;
+  font-size: 24px;
+}

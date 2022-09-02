@@ -1,0 +1,137 @@
+body.active-project {
+  overflow-y: hidden;
+}
+
+
+
+.project, .project_overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+.project{
+  z-index: 1;
+}
+
+.project_overlay {
+  background: rgba(49,49,49,0.8);
+}
+
+.project-content {
+  position: absolute;
+  display:block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: #f1f1f1;
+  padding: 14px 28px;
+  border-radius: 3px;
+  max-width: 900px;
+  
+}
+
+.close-modal{
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  margin-right: 10px;
+}
+
+.project-header-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+}
+  
+  .project-title{
+    font-weight: bold;
+    color: #6a6cca;
+    font-size: 28px;
+  }
+
+  .vertical-menu {
+    width: 500px;
+    max-height: 400px; /* Set a width if you like */
+    min-width: 300px;
+  }
+  
+  .vertical-menu .choice {
+    font-weight: bold;
+    text-align: left;
+    color: #6a6cca; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .vertical-menu .choice:hover {
+    background: #333333;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .vertical-sub-menu{
+    width: 500px;
+    min-width: 300px;
+    max-height: 150px; /* Set a width if you like */
+    overflow-y: auto;
+  }
+  
+.proj-lab{
+   
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+   
+    text-align: right;
+  }
+  
+  .proj-lab:hover {
+    background: #333333;
+    color: #fff;
+  }
+
+
+  .proj_name{
+    cursor: pointer;
+    float:left;
+  }
+
+  .proj_mod{
+    font-size: 12px;
+    margin-right: 60px;
+   
+  }
+
+  .del-project{
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+    margin-right: 30px;
+    margin-top: 5px;
+  
+  }
+
+  
+@media (max-width: 1100px) {
+
+  .vertical-sub-menu,.vertical-menu {
+    width: 300px;
+  }
+
+  .proj_mod{
+    margin-right: 10px;
+  }
+
+
+}

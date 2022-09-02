@@ -1,0 +1,46 @@
+.menu {
+    font-size: 16px;
+    border-radius: 2px;
+    width: 120px;
+    height: auto;
+    margin: 0;
+    background: #fff;
+  /* use absolute positioning  */
+    position: absolute;
+    list-style: none;
+    box-shadow: 0 0 20px 0 #ccc;
+    opacity: 1;
+    transition: opacity 0.5s linear;
+    z-index: 99;
+  }
+
+  .menu li {
+    cursor: pointer;
+    height: 25px;
+    color: #333333;
+  }
+  
+  .menu li:hover {
+    background: #333333;
+    color: #fff;
+  }
+
+  .right_click_overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 1;
+  }
+
+  .files{
+    height: 90vh;
+    width: 15%;
+    background: grey;
+    position: relative;
+    max-width: 250px;
+  
+  }

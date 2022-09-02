@@ -1,0 +1,283 @@
+
+body.active-github {
+    overflow-y: hidden;
+}
+  
+.github{
+    z-index: 1;
+}
+
+.github, .collab_overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+  
+.collab_overlay {
+    background: rgba(49,49,49,0.8);
+}
+
+.github-content {
+    position: absolute;
+    display:block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 10px 10px;
+    border-radius: 3px;
+    max-width: 600px;
+    min-width: 300px;
+}
+
+.close-github-modal{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+  }
+
+.github-header-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  
+}
+
+.github-title{
+  font-weight: bold;
+  color: #6a6cca;
+  font-size: 28px;
+}
+
+.clone100-form {
+ 
+    width: 350px;
+    padding: 5px;
+  
+}
+
+.clone100-form-title {
+    display: block;
+    width: 75%;
+    font-size: 18px;
+    color:#333333;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    padding-bottom: 16px;
+    float: left;
+  }
+
+  .push100-form-title{
+    display: block;
+    width: 63%;
+    font-size: 18px;
+    color:#333333;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    padding-bottom: 16px;
+    float: left;
+  }
+
+
+  input.inputclone100 {
+    height: 35px;
+    border-radius: 25px;
+    padding: 0 30px 0 20px;
+  }
+  
+  textarea.inputclone100 {
+    min-height: 150px;
+    border-radius: 25px;
+    padding: 14px 20px;
+  }
+  
+  /*---------------------------------------------*/
+  .wrap-inputclone100 {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .inputclone100 {
+    display: block;
+    width: 80%;
+    background: #e6e6e6;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666666;
+  }
+  
+  
+  /*------------------------------------------------------------------
+  [ Focus ]*/
+  .focus-inputclone100 {
+    display: block;
+    position: absolute;
+    border-radius: 25px;
+    bottom: 0;
+    z-index: -1;
+    width:  80%;
+    height: 100%;
+    box-shadow: 0px 0px 0px 0px;
+    color: rgba(132,106,221, 0.5);
+  }
+
+  .inputclone100:focus + .focus-inputclone100 {
+    -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
+    animation: anim-shadow 0.5s ease-in-out forwards;
+  }
+  
+  @-webkit-keyframes anim-shadow {
+    to {
+      box-shadow: 0px 0px 60px 25px;
+      opacity: 0;
+    }
+  }
+  
+  @keyframes anim-shadow {
+    to {
+      box-shadow: 0px 0px 60px 25px;
+      opacity: 0;
+    }
+  }
+  
+  
+  
+  .inputclone100:focus + .focus-inputclone100 + .symbol-input100 {
+    color: #846add;
+    padding-left: 22px;
+  }
+  
+  /*------------------------------------------------------------------
+  [ Button ]*/
+  .container-clone100-form-btn {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .clone100-form-btn {
+    width: 80%;
+    height: 30px;
+    border-radius: 25px;
+    background: #6a6cca;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  
+  .clone100-form-btn:hover {
+    background: #333333;
+  }
+
+.clone-content{
+    margin-bottom: 10px;
+    
+}
+.clone_details{
+    font-size: 13px;
+    width: 80%;
+    float : left;
+    text-align: left;
+}
+.err_clone_container{
+  margin-top: 40px;
+}
+.err_push_container{
+  margin-top: 80px;
+}
+
+.errormsg{
+    background-color: #6a6cca;
+    color: #fff;
+    font-weight: bold;
+    padding: 0.3rem;
+    margin-bottom:  1rem;
+    width: 100%;
+}
+
+.offscreen {
+    position: absolute;
+    left: -9999px;
+}
+
+.clone-switch{
+  float : right;
+  margin-right: 10px;
+  margin-top: 4px;
+}
+
+.clone100-header{
+  display:block;
+}
+
+textarea.inputclone100 {
+  min-height: 100px;
+  border-radius: 25px;
+  padding: 14px 20px;
+}
+.git-btn{
+    width: 65%;
+    height: 30px;
+    border-radius: 25px;
+    background: #6a6cca;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+    margin-bottom: 15px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  
+  
+
+}
+.git-btn:hover {
+  background: #333333;
+}
+
+.git_details{
+  font-size: 13px;
+  color:#333333;
+  font-weight: bold;
+  text-align: left;
+}
